@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Testing/>
+<!--    <Testing/>-->
 
     <v-row no-gutters>
       <v-col cols="12" md="2"></v-col>
@@ -14,18 +14,18 @@
 
 <script>
 // @ is an alias to /src
-import Testing from '@/components/Testing.vue'
+// import Testing from '@/components/Testing.vue'
 import About from "@/views/About";
 
 export default {
   name: 'Home',
   components: {
-    Testing,
+    // Testing,
     About,
   },
   methods: {
     naviGate(){
-      this.$router.push({name:'Testing'})
+      this.$router.push({name:'AnotherPage'})
     }
   }
 }
