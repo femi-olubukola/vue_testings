@@ -27,6 +27,11 @@ const routes = [
     path: '/testing',
     name: 'Testing',
     component: () => import('../components/Testing')
+  },
+  {
+    path: '/qr',
+    name: 'QrCode',
+    component: () => import('../components/QrCode')
   }
 ]
 
