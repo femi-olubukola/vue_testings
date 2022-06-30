@@ -2,12 +2,32 @@
   <v-app>
   <div>
     <div class="background">
-      <div class="secondBackground tw-flex tw-justify-center tw-items-center align-center">
-        <div class="imgBarcode tw-h-72 tw-w-72">
-          <v-img :src="barCode"> </v-img>
+      <div class="holder tw-flex tw-justify-center align-center tw-m-auto">
+
+        <div class="secondBackground  tw-w-80  ">
+          <div class="imgBarcode tw-w-72 tw-mb-32 tw-m-auto tw-mt-4">
+            <v-img :src="barCode" style="border-radius: 20px"> </v-img>
+          </div>
+
+          <div class=" ">
+
+            <div class="bigText tw-w-full">
+              Improve your front-end <br/>
+              skills by building projects
+            </div>
+
+            <div class="smallText tw-w-72 tw-pl-4 tw-mt-4">
+              Scan the QR code to visit Frontend
+              Mentor and take your coding skills to <br/>
+              the next level
+            </div>
+          </div>
+
         </div>
 
       </div>
+
+
     </div>
   </div>
   </v-app>
@@ -36,16 +56,35 @@ export default {
 }
 
 .secondBackground {
-  width: 290px;
-  height: 450px;
+  /*width: 290px;*/
+  height: 500px;
   background-color: #FFFFFF;
   border-radius: 20px;
-  position: center;
+  /*position: center;*/
 }
 
 .imgBarcode {
-  width: 288px;
-  height: 288px;
+  /*width: 288px;*/
+  /*height: 288px;*/
+  /*border-radius: 20px;*/
+}
+
+.bigText {
+  margin-top: -100px;
+}
+
+.holder {
+  height: 100%;
+}
+
+.bigText {
+  /*font-style: "Outfit", sans-serif;*/
+  font-weight: 700;
+  font-size: large;
+}
+
+.smallText {
+  font-weight: 400;
 }
 
 </style>
