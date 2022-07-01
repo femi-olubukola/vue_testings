@@ -80,11 +80,17 @@ export default {
 .bigText {
   /*font-style: "Outfit", sans-serif;*/
   font-weight: 700;
-  font-size: large;
+  font-size: 22px;
+  @import url('https://fonts.google.com/specimen/Outfit');
+  font-family: "Outfit", sans-serif;
+  font-style: normal;
 }
 
 .smallText {
   font-weight: 400;
+  @import url('https://fonts.google.com/specimen/Outfit');
+  font-family: "Outfit", sans-serif;
+  color: #769ECB;
 }
 
 </style>
