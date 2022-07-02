@@ -1,8 +1,12 @@
 <template>
   <div>
+
+    <div>
+      <Header/>
+    </div>
 <!--    <Testing/>-->
 
-    <div class="mt-12">
+    <div class="tw-mt-12">
     <v-row no-gutters>
       <v-col cols="12" md="2"></v-col>
     <v-btn @click="naviGate" outlined style="border-radius: 12px; background-color: bisque; color: gray">Navigate</v-btn>
@@ -25,10 +29,12 @@
 // @ is an alias to /src
 // import Testing from '@/components/Testing.vue'
 import About from "@/views/About";
+import Header from "@/components/reusables/Header";
 
 export default {
   name: 'Home',
   components: {
+    Header,
     // Testing,
     About,
   },
@@ -47,7 +53,7 @@ export default {
 <style scoped>
 
 .mb-4 {
-  /*margin-top: -20px;*/
+  margin-top: -20px;
 }
 
 </style>
