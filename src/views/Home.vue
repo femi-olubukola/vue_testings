@@ -21,7 +21,12 @@
     </div>
 
     <About :openDialog="dialog" @close="dialog=false"/>
+
+    <div class="footer">
+      <Footer/>
+    </div>
   </div>
+
 
 </template>
 
@@ -30,10 +35,12 @@
 // import Testing from '@/components/Testing.vue'
 import About from "@/views/About";
 import Header from "@/components/reusables/Header";
+import Footer from "@/components/reusables/Footer";
 
 export default {
   name: 'Home',
   components: {
+    Footer,
     Header,
     // Testing,
     About,
@@ -55,5 +62,10 @@ export default {
 .mb-4 {
   margin-top: -20px;
 }
+
+/*.footer {*/
+/*  position: absolute;*/
+/*  bottom: 0;*/
+/*}*/
 
 </style>
