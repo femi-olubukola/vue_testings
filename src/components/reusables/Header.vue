@@ -8,8 +8,27 @@
 
       <v-spacer/>
 
+      <div class="text-center tw-pr-3">
+        <v-badge
+            :value="hover"
+            color="deep-purple accent-4"
+            content="9999+"
+            left
+            transition="slide-x-transition"
+        >
+          <v-hover v-model="hover">
+            <v-icon
+                color="grey lighten-1"
+                large
+            >
+              mdi-account
+            </v-icon>
+          </v-hover>
+        </v-badge>
+      </div>
+
       <div @click="dropDown" class="tw-pr-7">
-        HHHHH
+        chuLOrd
       </div>
 
     </v-app-bar>
@@ -18,7 +37,12 @@
 
 <script>
 export default {
-  name: "Header"
+  name: "Header",
+  data() {
+    return {
+      hover: false,
+    }
+  }
 }
 </script>
 
