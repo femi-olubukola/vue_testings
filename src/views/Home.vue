@@ -6,6 +6,15 @@
     </div>
 <!--    <Testing/>-->
 
+    <div class="tw-flex tw-items-end tw-justify-end tw-w-32">
+      <v-col cols="12" md="1"></v-col>
+      <v-text-field
+          class="flex justify-end align-end"
+          label="Search"
+          solo
+      ></v-text-field>
+    </div>
+
     <div class="tw-mt-12">
     <v-row no-gutters>
       <v-col cols="12" md="2"></v-col>
