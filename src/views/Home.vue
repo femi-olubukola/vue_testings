@@ -31,6 +31,10 @@
 
     <About :openDialog="dialog" @close="dialog=false"/>
 
+    <div class="tw-mt-20">
+      <CircularProgress/>
+    </div>
+
     <div class="footer">
       <Footer/>
     </div>
@@ -45,10 +49,12 @@
 import About from "@/views/About";
 import Header from "@/components/reusables/Header";
 import Footer from "@/components/reusables/Footer";
+import CircularProgress from "@/components/reusables/CircularProgress";
 
 export default {
   name: 'Home',
   components: {
+    CircularProgress,
     Footer,
     Header,
     // Testing,
