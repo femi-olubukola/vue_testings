@@ -33,6 +33,7 @@
 
     <div class="tw-mt-20">
       <CircularProgress/>
+      <SnackBar/>
     </div>
 
     <div class="footer">
@@ -50,10 +51,12 @@ import About from "@/views/About";
 import Header from "@/components/reusables/Header";
 import Footer from "@/components/reusables/Footer";
 import CircularProgress from "@/components/reusables/CircularProgress";
+import SnackBar from "@/components/reusables/SnackBar";
 
 export default {
   name: 'Home',
   components: {
+    SnackBar,
     CircularProgress,
     Footer,
     Header,
