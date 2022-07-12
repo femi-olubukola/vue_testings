@@ -10,12 +10,18 @@
         <li>{{ instruction }}</li>
       </ul>
     </div>
+
+    <div class="tw-mt-10">
+      <CustomChipList/>
+    </div>
   </div>
 </template>
 
 <script>
+import CustomChipList from "@/components/CustomChipList";
 export default {
   name: "AnotherPage",
+  components: {CustomChipList},
   data() {
     return {
       instructions: {
