@@ -14,14 +14,19 @@
     <div class="tw-mt-10">
       <CustomChipList/>
     </div>
+
+    <div class="tw-mt-20">
+      <Ratings/>
+    </div>
   </div>
 </template>
 
 <script>
 import CustomChipList from "@/components/CustomChipList";
+import Ratings from "@/components/reusables/Ratings";
 export default {
   name: "AnotherPage",
-  components: {CustomChipList},
+  components: {Ratings, CustomChipList},
   data() {
     return {
       instructions: {
