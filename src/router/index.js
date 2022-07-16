@@ -32,6 +32,11 @@ const routes = [
     path: '/qr',
     name: 'QrCode',
     component: () => import('../components/QrCode')
+  },
+  {
+    path: '/weekly',
+    name: 'WeeklyCalender',
+    component: () => import('../components/reusables/WeeklyCalender')
   }
 ]
 
