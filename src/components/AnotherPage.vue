@@ -20,6 +20,7 @@
     </div>
 
     <Card/>
+    <CommentsSection/>
 
   </div>
 </template>
@@ -28,9 +29,10 @@
 import CustomChipList from "@/components/CustomChipList";
 import Ratings from "@/components/reusables/Ratings";
 import Card from "@/components/reusables/Card";
+import CommentsSection from "@/components/CommentsSection";
 export default {
   name: "AnotherPage",
-  components: {Card, Ratings, CustomChipList},
+  components: {CommentsSection, Card, Ratings, CustomChipList},
   data() {
     return {
       instructions: {
