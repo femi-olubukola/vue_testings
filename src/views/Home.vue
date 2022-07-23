@@ -31,6 +31,10 @@
 
     <About :openDialog="dialog" @close="dialog=false"/>
 
+    <div>
+      <overlay-with-loader/>
+    </div>
+
     <div class="tw-mt-20">
       <CircularProgress/>
       <SnackBar/>
@@ -52,10 +56,12 @@ import Header from "@/components/reusables/Header";
 import Footer from "@/components/reusables/Footer";
 import CircularProgress from "@/components/reusables/CircularProgress";
 import SnackBar from "@/components/reusables/SnackBar";
+import OverlayWithLoader from "@/components/reusables/overlay-with-loader";
 
 export default {
   name: 'Home',
   components: {
+    OverlayWithLoader,
     SnackBar,
     CircularProgress,
     Footer,
