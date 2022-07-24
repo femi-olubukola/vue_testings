@@ -37,6 +37,11 @@ const routes = [
     path: '/weekly',
     name: 'WeeklyCalender',
     component: () => import('../components/reusables/WeeklyCalender')
+  },
+  {
+    path: '/sparkline',
+    name: 'HeartRateSparklines',
+    component: () => import('../components/HeartRateSparklines')
   }
 ]
 
