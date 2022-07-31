@@ -42,6 +42,11 @@ const routes = [
     path: '/sparkline',
     name: 'HeartRateSparklines',
     component: () => import('../components/HeartRateSparklines')
+  },
+  {
+    path: '/login',
+    name: 'LoginPage',
+    component: () => import('../components/LoginPage')
   }
 ]
 
