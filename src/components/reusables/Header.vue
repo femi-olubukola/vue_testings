@@ -34,17 +34,36 @@
             transition="slide-x-transition">
           <v-hover v-model="hover">
 
-            <div @click="dropDown" class="tw-pr-5">
-              chuLOrd
-            </div>
+            <v-menu
+                v-model="showMenu"
+                absolute
+                offset-y
+                style="max-width: 400px"
+            >
 
+            <template v-slot:activator="{ on, attrs }">
+<!--              <v-btn>-->
+                <div @click="dropDown" class="tw-pr-5"
+                     v-bind="attrs"
+                     v-on="on">
+                  chuLOrd
+                </div>
+<!--              </v-btn>-->
+            </template>
+            <v-list>
+              <v-list-item
+                  v-for="(item, index) in items"
+                  :key="index"
+              >
+                <v-list-item-title>{{ item.title }}</v-list-item-title>
+              </v-list-item>
+            </v-list>
+            </v-menu>
           </v-hover>
-
         </v-badge>
       </div>
-
-
     </v-app-bar>
+
   </div>
 </template>
 
@@ -54,6 +73,12 @@ export default {
   data() {
     return {
       hover: false,
+      showMenu: false,
+      items: [
+        { title: 'Change Nickname' },
+        { title: 'Edit Profile' },
+        { title: 'Logout' },
+      ],
     }
   }
 }
