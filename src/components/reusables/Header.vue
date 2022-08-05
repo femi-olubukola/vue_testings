@@ -10,26 +10,39 @@
 
       <div class="text-center tw-pr-3">
         <v-badge
-            :value="hover"
-            color="deep-purple accent-4"
-            content="9999+"
-            left
-            transition="slide-x-transition"
-        >
-          <v-hover v-model="hover">
+            bordered
+            color="error"
+            icon="mdi-lock"
+            overlap>
+<!--          <v-hover v-model="hover">-->
             <v-icon
                 color="grey lighten-1"
                 large
             >
               mdi-account
             </v-icon>
-          </v-hover>
+<!--          </v-hover>-->
         </v-badge>
       </div>
 
-      <div @click="dropDown" class="tw-pr-7">
-        chuLOrd
+      <div>
+        <v-badge
+            :value="hover"
+            color="deep-purple accent-4"
+            content="9999+"
+            right
+            transition="slide-x-transition">
+          <v-hover v-model="hover">
+
+            <div @click="dropDown" class="tw-pr-5">
+              chuLOrd
+            </div>
+
+          </v-hover>
+
+        </v-badge>
       </div>
+
 
     </v-app-bar>
   </div>

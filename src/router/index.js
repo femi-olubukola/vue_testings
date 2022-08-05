@@ -43,11 +43,11 @@ const routes = [
     name: 'HeartRateSparklines',
     component: () => import('../components/HeartRateSparklines')
   },
-  {
-    path: '/login',
-    name: 'LoginPage',
-    component: () => import('../components/LoginPage')
-  }
+  // {
+  //   path: '/login',
+  //   name: 'LoginPage',
+  //   component: () => import('../components/LoginPage')
+  // }
 ]
 
 const router = new VueRouter({
