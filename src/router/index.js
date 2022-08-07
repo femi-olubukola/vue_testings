@@ -48,6 +48,11 @@ const routes = [
   //   name: 'LoginPage',
   //   component: () => import('../components/LoginPage')
   // }
+  {
+    path: '/directory',
+    name: 'UserDirectory',
+    component: () => import('../components/UserDirectory')
+  }
 ]
 
 const router = new VueRouter({
