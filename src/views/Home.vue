@@ -22,6 +22,10 @@
     </v-row>
     </div>
 
+    <div>
+      <TimePicker/>
+    </div>
+
     <div class="mb-4">
       <v-row no-gutters>
         <v-col cols="12" md="9"></v-col>
@@ -57,10 +61,12 @@ import Footer from "@/components/reusables/Footer";
 import CircularProgress from "@/components/reusables/CircularProgress";
 import SnackBar from "@/components/reusables/SnackBar";
 import OverlayWithLoader from "@/components/reusables/overlay-with-loader";
+import TimePicker from "@/components/reusables/TimePicker";
 
 export default {
   name: 'Home',
   components: {
+    TimePicker,
     OverlayWithLoader,
     SnackBar,
     CircularProgress,
