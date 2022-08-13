@@ -44,9 +44,15 @@
       <SnackBar/>
     </div>
 
+    <DeleteModal :deleteAdmin="deleteAdmin" @close="deleteAdmin=false" :button-loading="buttonLoading" @delete="removeAdmin"></DeleteModal>
+    <DeleteModal title="Remove Instructor" :message="message" :deleteAdmin="deleteAdmin" @close="deleteAdmin=false" :button-loading="buttonLoading" @delete="removeInstructor"></DeleteModal>
+
+
     <div class="footer">
       <Footer/>
     </div>
+
+
   </div>
 
 
@@ -62,10 +68,12 @@ import CircularProgress from "@/components/reusables/CircularProgress";
 import SnackBar from "@/components/reusables/SnackBar";
 import OverlayWithLoader from "@/components/reusables/overlay-with-loader";
 import TimePicker from "@/components/reusables/TimePicker";
+import DeleteModal from "@/components/reusables/DeleteModal";
 
 export default {
   name: 'Home',
   components: {
+    DeleteModal,
     TimePicker,
     OverlayWithLoader,
     SnackBar,
@@ -75,6 +83,15 @@ export default {
     // Testing,
     About,
   },
+  data () {
+    return {
+      buttonLoading: false,
+      deleteAdmin: false,
+      message: 'Deleting this Instructor cannot be undone, but if you really want to, proceed by clicking the delete button.',
+
+    }
+  },
+
   methods: {
     naviGate(){
       this.$router.push({name:'AnotherPage'})
