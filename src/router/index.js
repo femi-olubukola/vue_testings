@@ -52,6 +52,11 @@ const routes = [
     path: '/directory',
     name: 'UserDirectory',
     component: () => import('../components/UserDirectory')
+  },
+  {
+    path: '/default',
+    name: 'Default',
+    component: () => import('../views/Default')
   }
 ]
 
