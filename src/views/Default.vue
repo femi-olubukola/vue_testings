@@ -3,13 +3,20 @@
   <div id="app">
     <button @click="increase">Click Me</button>
     <p>{{counter}}</p>
+
+
+    <LazyComponent/>
+
+
   </div>
 
 </template>
 
 <script>
+import LazyComponent from "@/components/LazyComponent";
 export default {
   name: "Default",
+  components: {LazyComponent},
   data() {
     return {
       counter: 0,
