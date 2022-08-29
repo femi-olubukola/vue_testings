@@ -1,8 +1,8 @@
 <template>
   <v-parallax
-      height="700"
+      height="2000"
       dark
-      src="https://cdn.vuetifyjs.com/images/backgrounds/vbanner.jpg"
+      src="https://cdn.vuetifyjs.com/images/parallax/material2.jpg"
   >
     <v-row
         align="center"
