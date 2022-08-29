@@ -54,6 +54,11 @@ const routes = [
     component: () => import('../components/UserDirectory')
   },
   {
+    path: '/parallax',
+    name: 'ParallaxBackground',
+    component: () => import('../components/ParallaxBackground')
+  },
+  {
     path: '/default',
     name: 'Default',
     component: () => import('../views/Default')
