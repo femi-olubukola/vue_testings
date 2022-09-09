@@ -30,7 +30,12 @@
 
 <script>
 export default {
-  name: "Transition"
+  name: "Transition",
+  data() {
+    return {
+      listItems: [],
+    }
+  }
 }
 </script>
 
