@@ -1,6 +1,12 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
+import CoachDetails from "@/Pages/Coaches/CoachDetails";
+import CoachesList from "@/Pages/Coaches/CoachesList";
+import CoachRegistration from "@/Pages/Coaches/CoachRegistration";
+import ContactCoach from "@/Pages/Requests/ContactCoach";
+import RequestReceived from "@/Pages/Requests/RequestReceived";
+import notFound from "@/Pages/notFound";
 
 Vue.use(VueRouter)
 
@@ -62,7 +68,21 @@ const routes = [
     path: '/default',
     name: 'Default',
     component: () => import('../views/Default')
-  }
+  },
+  {path: '/', redirect: '/coaches'},
+
+  {path: '/coaches', component: CoachesList},
+
+  {path: '/coaches/:id', component: CoachDetails,
+    children: [
+      {path: 'contact', component: ContactCoach},
+    ]},
+
+  {path: '/register', component: CoachRegistration},
+
+  {path: '/request', component: RequestReceived},
+
+  {path: '/:notFound(.*)', component: notFound}
 ]
 
 const router = new VueRouter({
